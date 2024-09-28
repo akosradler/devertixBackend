@@ -8,7 +8,6 @@ export class QuestionService {
     this.questionRepository = repository;
   }
 
-  // Retrieves all users from the database
   async getAllQuestions(): Promise<Question[] | null> {
     return await this.questionRepository.getAllQuestions();
   }
